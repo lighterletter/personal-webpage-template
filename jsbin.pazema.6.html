@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2015 by lighterletter (http://jsbin.com/pazema/6/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<!--
+    Coalition for Queens
+    Access Code 2015 bootcamp 
+    Applicant: John Gomez. "I made an attempt at writting my own code from scratch but ended up with a very 90's looking site that I wasn't happy with. After stopping by the office hours for some advice, I ended up using the template from the Ada Lovelace webpage and adapting some of my earlier elements from the site before, I am much more happier with the result now.
+-->
+<html>
+  <head>
+    <meta charset='UTF-8'>
+<meta name="robots" content="noindex">
+    <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <title>John Gomez</title>
+  
+<style id="jsbin-css">
+</style>
+<style id="jsbin-css">
+body {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  color: aliceblue;
+  text-decoration: underline;
+}
+p {
+  margin: 0;
+}
+/* Class selectors
+*/
+.clear {
+  clear: both;
+}
+.highlight {
+  color: #ffcc00;
+}
+.content {
+  margin: 0 50px 50px 300px;
+  max-width: 100%;
+}
+.wrapper {
+  padding: 50px 0;
+}
+.wrapper h1 {
+  color: white;
+  font-family: 'Abril Fatface', sans-serif;
+  padding-left: 15px;
+  position: absolute;
+  left: 50px;
+  margin: 0;
+  width: 150px;
+  z-index: 1000; /* This must be greater than the menu's z-index. */
+}
+
+/* Main blocks
+*/
+#menu {
+  background: black;
+  right: 50px;
+  padding-right: 100px;
+  position: fixed;
+  background-image:url("http://content5.videojug.com/18/181f2272-3eda-182c-9a18-ff0008cd4a33/a-guide-to-esoteric-astrology-2.WidePlayer.jpg?v2");
+  border-radius: 5px;
+  top: 350px;
+  width: 200px;
+  z-index: 999;
+}
+#menu li {
+  margin: 20px 0;
+  color: #ffcc00;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+#menu a {
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+#menu a:hover {
+  color: #ffcc00;
+}
+#intro.wrapper {
+  background-image:url("http://www.quantumcathedral.com/TRANSHUMAN-HAND999.jpg");
+  
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: aliceblue;
+  height: 1000px;
+  padding-top: 100px; /* This should be the same as the menu. */
+}
+#intro.wrapper .content {
+  font-family: 'Abril Fatface', sans-serif;
+  font-size: 35px;
+  margin-top: 0;
+  max-width: 100%;
+  width: 400px;
+}
+#bio.wrapper {
+  background: #ffcc00;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+}
+#contact.wrapper h1 {
+  color: #ffcc00;
+}
+#contact.wrapper {
+  margin-bottom: 200px;
+}
+#contact.wrapper .content {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.35em;
+  font-style: italic;
+}
+#johnpicture {display: inline-block;
+  background-image:url("https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/483287_10150984951738191_1206542467_n.jpg?oh=eafe9215767c154f7b2102021630bd0c&oe=5554F18A&__gda__=1435778049_287028cb51f7b5a92b5f2b186b105d6b");
+  background-size: cover;
+	margin-left: 5px;
+	height: 100px;
+	width: 100px;
+	border:2px solid black;
+	border-radius: 100%;
+  border-radius: 100px;
+}
+
+</style>
+</head>
+  <body>
+    <!-- Menu floats above content. -->
+    <ul id="menu">
+      <li>
+        <p>Links</p>
+      </li>
+      <li>
+        <a href="https://github.com/lighterletter">Github</a>
+      <li>
+      <li>
+        <a href="http://www.khanacademy.org/profile/lighterletter">khan academy</a>
+      </li>
+      <li>
+        <a href="http://www.codecademy.com/lighterletter">Codeacademy</a>
+      </li>
+      <li>
+        <embed src="http://www.foxtextile.com/Alt-J%20-%20This%20Is%20All%20Yours/09%20-%20Warm%20Foothills.mp3" autostart="false" loop="false" hidden="false">
+        </embed>
+      </li>
+    </ul>
+
+    <!-- Wrappers block content at the structural level. -->
+    <div id="intro" class="wrapper">
+      <p class="content">
+        Hi, my name is <span class="highlight">John Gomez</span>. I am a Colombian mathematician, computationalist, and writer. You might not know of me because I've yet to publish my work. I have been called the <span class="highlight">world's worst programmer.</span>
+      </p>
+    </div>
+
+    <div id="bio" class="wrapper">
+      <h1>Bio</h1>
+      <p class="content">A 25 year old Queens native, John came from Colombia when he was just 8 years old.It was strange acclamating to the culture shock at such a young age, but an adventurous spirit and an unquenchable sense of wonder led him to find solace in space and the mysteries of the universe. Inspired by the likes of Elon Musk and companies like <a href="http://www.google.com">Google</a>,<a href="http://www.spacex.com">SpaceX</a> and <a href="http://www.teslamotors.com">Tesla motors</a>, John aspires to follow a career path in tech. Hopefully one that will lead to opportunities in these powerful and globally impactful emergent fields. With a strong attraction towards technological innovation and a drive to be a part of the revolution, John aspires to and constantly works towards building a useful skillset that can establish him as a part of an inspiring emergent culture.
+      </p>
+    </div>
+
+    <div id="contact" class="wrapper">
+      <h1>Contact</h1>
+      <div class="content">
+        <div id="johnpicture"></div>
+        <p> 
+          E-mail: Jgomez818@gmail.com
+        </p>
+        <p>
+          Tel: (347) 405-1854</p>
+        <p>
+          Queens, New York, USA 2015
+        </p>
+      </div>
+    </div>
+
+</script>
+
+</body>
+</html>
